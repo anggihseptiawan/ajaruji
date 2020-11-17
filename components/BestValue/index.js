@@ -2,7 +2,7 @@ import PriceCard from '../PriceCard';
 
 const BestValue = () => {
     return(
-        <section className="best_value bg-indigo-700 pt-16 pb-32">
+        <section className="best_value bg-indigo-700 pt-16 pb-32" id="berlangganan">
             <div className="container mx-auto">
                 <h5 className="text-2xl font-bold text-center mb-4">Penawaran Terbaik</h5>
                 <p className="text-center font-medium mb-12">Dapatkan penawaran menarik untuk akses tak terhingga belajar dengan Ajar Uji.</p>

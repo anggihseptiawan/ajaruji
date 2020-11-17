@@ -11,6 +11,10 @@ const PriceCard = ({icon, title, type, description, isBest}) => {
             return <img className="block mx-auto" src={Year} alt={title} />
         } else if (icon === 'group') {
             return <img className="block mx-auto" src={Group} alt={title} />
+        } else if (icon === 'user1') {
+            return <img className="block mx-auto" src="https://www.flaticon.com/svg/static/icons/svg/2922/2922572.svg" alt={title} />
+        } else if (icon === 'user2') {
+            return <img className="block mx-auto" src="https://www.flaticon.com/svg/static/icons/svg/2922/2922510.svg" alt={title} /> 
         }
         return <img className="block mx-auto" src={Month} alt={title} />
     }

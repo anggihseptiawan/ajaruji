@@ -3,10 +3,10 @@ import HeroImage from "../../assets/images/Home Illustration@2x.png";
 
 const Hero = () => {
 	return (
-		<section className="hero pb-20">
+		<section className="hero pb-20" id="beranda">
 			<div className="container mx-auto">
 				<Navbar />
-				<div className="flex mt-8">
+				<div className="flex pt-20">
 					<div className="w-1/2 sm:w-full mt-20 sm:mt-0">
 						<h4 className="font-bold text-5xl sm:text-2xl text-white mb-4">
 							Platform Sekolah Online <br /> Yang Menyenangkan

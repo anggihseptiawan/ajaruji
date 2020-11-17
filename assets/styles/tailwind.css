@@ -9,6 +9,9 @@ body {
 	overflow-x: hidden;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 
 
 /***************************
@@ -29,6 +32,41 @@ body {
 */
 .cukhLH {
     margin: 0px 30px !important;
+}
+
+
+/***************************
+**   Global classes
+*/
+.price_card {
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+
+.container {
+	width: 90%;
+}
+
+
+/***************************
+**   Nav menu
+*/
+.toggle-menu span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.nav-menu.active {
+	background: #3b40b3;
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 section.hero {
@@ -68,6 +106,12 @@ section.demo {
 	flex-direction: column;
 }
 
+section.who_we_are img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
 section.best_value {
 	position: relative;
 }
@@ -100,6 +144,22 @@ section.best_value .price_card .img-container {
 	margin: 0 auto;
 }
 
+section.why_us .price_card .img-container {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	background: #78aaf4;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+section.why_us .price_card .img-container img {
+	width: 100px;
+	height: 100px;
+}
+
 section.best_value h5, 
 section.best_value p, 
 section.best_value .flex {
@@ -108,18 +168,18 @@ section.best_value .flex {
 } 
 
 
-.container {
-	width: 90%;
-}
 
 @media (max-width: 576px) {	
+	.cukhLH {
+		margin: 0px 10px !important;
+	}
 
 	section.best_value::after {
 		border-bottom-left-radius: 13%;
 		border-bottom-right-radius: 13%;
 	}
 
-	section.hero .flex.mt-8, 
+	section.hero .flex.pt-20, 
 	section.benefit .flex, 
 	section.best_value .flex,
 	footer .flex.border-b-2 {
