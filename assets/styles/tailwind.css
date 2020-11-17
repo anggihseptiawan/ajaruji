@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+
+
+/***************************
+**   Cutom carousel style (dots color)
+*/
+.DIuaA {
+    background-color: rgb(64 69 199) !important;
+    box-shadow: 0 0 1px 3px rgb(64 69 199) !important;
+}
+
+.gUWalH {
+    background-color: #cecece !important;
+    box-shadow: 0 0 1px 2px rgb(206 206 206) !important;
+}
+
+/***************************
+**   Cutom carousel style (margin x)
+*/
+.cukhLH {
+    margin: 0px 30px !important;
+}
+
+section.hero {
+	background: url("../images/Path\ 5374@2x.png");
+	background-size: cover;
+	background-position: bottom;
+}
+
+section.benefit .benefit-item .img-container {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+section.benefit .benefit-item .img-container.book {
+	background: #e08079;
+}
+
+section.benefit .benefit-item .img-container.smile {
+	background: #f7be74;
+}
+
+section.benefit .benefit-item .img-container.development {
+	background: #b8d786;
+}
+
+section.benefit .benefit-item .img-container.access {
+	background: #b3f4ed;
+}
+
+section.benefit .benefit-item .img-container.study {
+	background: #78aaf4;
+}
+
+section.demo {
+	background: #4045c7;
+	flex-direction: column;
+}
+
+section.best_value {
+	position: relative;
+}
+
+section.best_value::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: white;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+section.best_value .price_card {
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+
+section.best_value .price_card .img-container {
+	display: flex;
+	width: 100px;
+	height: 100px;
+	background: #78aaf4;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+section.best_value h5, 
+section.best_value p, 
+section.best_value .flex {
+	position: relative;
+	z-index: 2;
+} 
+
+
+.container {
+	width: 90%;
+}
+
+@media (max-width: 576px) {	
+
+	section.best_value::after {
+		border-bottom-left-radius: 13%;
+		border-bottom-right-radius: 13%;
+	}
+
+	section.hero .flex.mt-8, 
+	section.benefit .flex, 
+	section.best_value .flex,
+	footer .flex.border-b-2 {
+		flex-direction: column;
+	}
+
+}

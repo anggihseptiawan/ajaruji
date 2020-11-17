@@ -1,5 +1,11 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
+import Hero from "../components/Hero";
+import Benefit from "../components/Benefit";
+import Demo from "../components/Demo";
+import WhoWeAre from '../components/WhoWeAre';
+import BestValue from '../components/BestValue';
+import WhyUs from '../components/WhyUs';
+import Footer from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -9,9 +15,13 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div className="container mx-auto">
-				<Navbar />
-			</div>
+			<Hero />
+			<Benefit />
+			<Demo />
+			<WhoWeAre />
+			<BestValue />
+			<WhyUs />
+			<Footer />
 		</>
 	);
 }
