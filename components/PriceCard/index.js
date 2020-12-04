@@ -20,7 +20,7 @@ const PriceCard = ({icon, title, type, description, isBest}) => {
     }
 
     return(
-        <div className="price_card bg-white rounded-lg px-6 py-16 mx-6 relative sm:mb-4">
+        <div className="price_card flex-1 bg-white rounded-lg px-6 pt-16 pb-8 mx-2 relative sm:mb-4">
             {
                 isBest && <img src={BestBadge} className="absolute top-0 right-0" alt={title} />
             }
@@ -29,7 +29,7 @@ const PriceCard = ({icon, title, type, description, isBest}) => {
             </div>
            <p className="font-bold text-center mt-4">{title}</p> 
            <p className="font-bold text-center my-2">{type}</p>
-           <p className="text-center">{description}</p> 
+           <p className="text-center h-32">{description}</p> 
         </div>
     )
 }

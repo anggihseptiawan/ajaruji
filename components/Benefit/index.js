@@ -2,7 +2,7 @@ import BenefitItem from "../BenefitItem";
 
 const Benefit = () => {
 	return (
-		<section className="benefit py-20" id="fitur">
+		<section className="benefit py-20 sm:py-10" id="fitur">
 			<div className="container mx-auto">
 				<h5 className="text-center font-bold text-2xl mb-2">
 					Manfaat Yang Kamu Dapatkan

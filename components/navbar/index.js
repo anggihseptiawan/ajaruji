@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Logo from "../../assets/images/Logo Ajar Uji white.png";
+import Link from 'next/link'
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -32,12 +33,19 @@ const Navbar = () => {
 					<a href="#tentang_kami" className="text-white font-bold mx-4 mb-2">
 						Tentang Kami
 					</a>
-					<a
-						href="#"
-						className="text-blue-600 bg-white px-6 py-2 rounded-full font-bold mx-4 mb-2"
-					>
-						Masuk
-					</a>
+					<Link href="/auth">
+						<a		
+							className="text-blue-600 bg-white px-10 py-2 rounded-full font-bold mx-4 mb-2"
+							style={{width: 'max-content'}}
+						>
+							Masuk
+						</a>
+					</Link>
+					<Link href="/category/teacher?status=approve">
+						<a className="text-white font-bold mx-4 mb-2">
+							Teacher 
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>

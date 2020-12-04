@@ -5,7 +5,7 @@ import Whatsapp from "../../assets/images/whatsapp.png";
 
 const Footer = () => {
 	return (
-		<footer className="bg-indigo-700 mt-16 py-8">
+		<footer className="bg-indigo-700 mt-16 py-8 sm:mt-6">
 			<div className="container mx-auto">
 				<div className="flex border-b-2 border-gray-500 pt-4 pb-8">
 					<div className="img-container w-1/2 sm:w-full sm:mb-8">

@@ -6,7 +6,7 @@ const Hero = () => {
 		<section className="hero pb-20" id="beranda">
 			<div className="container mx-auto">
 				<Navbar />
-				<div className="flex pt-20">
+				<div className="flex pt-20 sm:pt-10">
 					<div className="w-1/2 sm:w-full mt-20 sm:mt-0">
 						<h4 className="font-bold text-5xl sm:text-2xl text-white mb-4">
 							Platform Sekolah Online <br /> Yang Menyenangkan
