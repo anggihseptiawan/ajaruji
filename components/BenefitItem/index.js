@@ -1,23 +1,19 @@
-import Book from "../../assets/images/bank soal.png";
-import Smile from "../../assets/images/Group 5.png";
-import Development from "../../assets/images/Group 3.png";
-import Access from "../../assets/images/Group 2.png";
-import Book1 from "../../assets/images/book.png";
+import Image from "next/image";
 
 const BenefitItem = ({ icon, title, description }) => {
 	const PickIcon = () => {
 		if (icon === "book") {
-			return <img src={Book} alt={title} />;
+			return <Image src="/images/bank soal.png" alt={title} />;
 		} else if (icon === "smile") {
-			return <img src={Smile} alt={title} />;
+			return <Image src="/images/Group 5.png" alt={title} />;
 		} else if (icon === "developmet") {
-			return <img src={Development} alt={title} />;
+			return <Image src="/images/Group 3.png" alt={title} />;
 		} else if (icon === "access") {
-			return <img src={Access} alt={title} />;
+			return <Image src="/images/Group 2.png" alt={title} />;
 		} else if (icon === "study") {
-			return <img src={Book1} alt={title} />;
+			return <Image src="book.png" alt={title} />;
 		}
-		return <img src={Book} alt={title} />;
+		return <Image src="/images/bank soal.png" alt={title} />;
 	};
 
 	return (
@@ -27,9 +23,7 @@ const BenefitItem = ({ icon, title, description }) => {
 			>
 				<PickIcon />
 			</div>
-			<span className="title text-center font-bold block mb-3">
-				{title}
-			</span>
+			<span className="title text-center font-bold block mb-3">{title}</span>
 			<p className="text-center font-medium">{description}</p>
 		</div>
 	);

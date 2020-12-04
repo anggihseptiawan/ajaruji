@@ -1,5 +1,5 @@
 import Navbar from "../Navbar";
-import HeroImage from "../../assets/images/Home Illustration@2x.png";
+import Image from "next/image";
 
 const Hero = () => {
 	return (
@@ -25,8 +25,8 @@ const Hero = () => {
 						</a>
 					</div>
 					<div className="w-1/2 sm:w-full sm:mt-6">
-						<img
-							src={HeroImage}
+						<Image
+							src="/images/Home Illustration@2x.png"
 							className="w-full"
 							alt="hero-image"
 						/>

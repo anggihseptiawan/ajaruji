@@ -1,7 +1,4 @@
-import Logo from "../../assets/images/Logo Ajar Uji white.png";
-import Mail from "../../assets/images/mail.png";
-import Instagram from "../../assets/images/instagram.png";
-import Whatsapp from "../../assets/images/whatsapp.png";
+import Image from "next/image";
 
 const Footer = () => {
 	return (
@@ -9,14 +6,17 @@ const Footer = () => {
 			<div className="container mx-auto">
 				<div className="flex border-b-2 border-gray-500 pt-4 pb-8">
 					<div className="img-container w-1/2 sm:w-full sm:mb-8">
-						<img src={Logo} alt="logo-ajaruji" />
+						<Image
+							src="/images/Logo Ajar Uji white-1.png"
+							alt="logo-ajaruji"
+						/>
 					</div>
 					<div className="w-1/2 sm:w-full sm:mb-8 address pr-16">
 						<h5 className="text-white font-bold mb-4">Address</h5>
 						<p className="text-white font-medium">
-							Jl. Warung Buncit Raya No. 40D, RT.1 / RW.2, Duren
-							Tiga, kec. Pancoran, Kota Jakarta Selatan, Daerah
-							khusus ibukota Jakarta 12760
+							Jl. Warung Buncit Raya No. 40D, RT.1 / RW.2, Duren Tiga,
+							kec. Pancoran, Kota Jakarta Selatan, Daerah khusus ibukota
+							Jakarta 12760
 						</p>
 					</div>
 					<div className="w-1/4 sm:w-full sm:mb-8 about">
@@ -31,9 +31,9 @@ const Footer = () => {
 					<div className="w-1/4 sm:w-full sm:mb-8 contact">
 						<h5 className="text-white font-bold mb-4">Contact</h5>
 						<div className="flex mb-2">
-							<img
+							<Image
 								className="mr-2"
-								src={Mail}
+								src="/images/mail.png"
 								alt="email ajaruji"
 							/>
 							<span className="font-medium text-white">
@@ -41,19 +41,17 @@ const Footer = () => {
 							</span>
 						</div>
 						<div className="flex mb-2">
-							<img
+							<Image
 								className="mr-2"
-								src={Instagram}
+								src="images/instagram.png"
 								alt="email ajaruji"
 							/>
-							<span className="font-medium text-white">
-								ajaruji
-							</span>
+							<span className="font-medium text-white">ajaruji</span>
 						</div>
 						<div className="flex mb-2">
-							<img
+							<Image
 								className="mr-2"
-								src={Whatsapp}
+								src="/images/whatsapp.png"
 								alt="email ajaruji"
 							/>
 							<span className="font-medium text-white">

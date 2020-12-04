@@ -1,0 +1,3 @@
+# Next-on-Netlify Redirects
+/api/hello  /.netlify/functions/next_api_hello  200
+/category/:category  /category/[category].html  200

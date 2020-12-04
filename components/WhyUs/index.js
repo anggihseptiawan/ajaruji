@@ -1,12 +1,12 @@
 import Carousel from "react-elastic-carousel";
-import Next from "../../assets/images/arrow-1.png";
 import PriceCard from "../PriceCard";
+import Image from "next/image";
 
 const WhyUs = () => {
 	const arrow = ({ onClick, isEdge }) => {
 		return (
 			<button onClick={onClick} disabled={isEdge}>
-				<img src={Next} />
+				<Image src="/images/arrow-1.png" />
 			</button>
 		);
 	};
