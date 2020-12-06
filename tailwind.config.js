@@ -3,7 +3,7 @@ module.exports = {
 		// removeDeprecatedGapUtilities: true,
 		// purgeLayersByDefault: true,
 	},
-	purge: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+	purge: [],
 	theme: {
 		screens: {
 			xl: { max: "1279px" },
