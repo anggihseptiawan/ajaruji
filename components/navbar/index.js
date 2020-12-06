@@ -1,13 +1,12 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
 		<div className="navbar flex justify-between items-center py-4">
-			<Image src="/images/Logo Ajar Uji white-1.png" alt="logo-ajaruji" />
+			<img src="/images/Logo Ajar Uji white-1.png" alt="logo-ajaruji" />
 			<div className="links">
 				<div
 					className="toggle-menu hidden sm:block cursor-pointer"

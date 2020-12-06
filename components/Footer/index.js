@@ -6,7 +6,7 @@ const Footer = () => {
 			<div className="container mx-auto">
 				<div className="flex border-b-2 border-gray-500 pt-4 pb-8">
 					<div className="img-container w-1/2 sm:w-full sm:mb-8">
-						<Image
+						<img
 							src="/images/Logo Ajar Uji white-1.png"
 							alt="logo-ajaruji"
 						/>
@@ -31,7 +31,7 @@ const Footer = () => {
 					<div className="w-1/4 sm:w-full sm:mb-8 contact">
 						<h5 className="text-white font-bold mb-4">Contact</h5>
 						<div className="flex mb-2">
-							<Image
+							<img
 								className="mr-2"
 								src="/images/mail.png"
 								alt="email ajaruji"
@@ -41,7 +41,7 @@ const Footer = () => {
 							</span>
 						</div>
 						<div className="flex mb-2">
-							<Image
+							<img
 								className="mr-2"
 								src="images/instagram.png"
 								alt="email ajaruji"
@@ -49,7 +49,7 @@ const Footer = () => {
 							<span className="font-medium text-white">ajaruji</span>
 						</div>
 						<div className="flex mb-2">
-							<Image
+							<img
 								className="mr-2"
 								src="/images/whatsapp.png"
 								alt="email ajaruji"

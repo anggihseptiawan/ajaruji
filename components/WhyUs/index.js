@@ -6,7 +6,7 @@ const WhyUs = () => {
 	const arrow = ({ onClick, isEdge }) => {
 		return (
 			<button onClick={onClick} disabled={isEdge}>
-				<Image src="/images/arrow-1.png" />
+				<img src="/images/arrow-1.png" />
 			</button>
 		);
 	};

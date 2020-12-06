@@ -59,7 +59,7 @@ const WhoWeAre = () => {
 					{items.map((item) => {
 						return (
 							<div className="item" key={item.id}>
-								<Image src={item.title} className="rounded-md" />
+								<img src={item.title} className="rounded-md" />
 							</div>
 						);
 					})}
